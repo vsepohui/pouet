@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no,width=device-width" />
+    <meta name="description" content="">
+    <meta name="generator" content="Wordpress">
+    <title><%= title || 'Поэт' %></title>
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/style.css?v=8" rel="stylesheet">
+
+	<link rel="icon" href="/favicon.ico" sizes="16x16" type="image/png">
+	<link rel="icon" href="/favicon.ico"/>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Merriweather&display=swap" rel="stylesheet">
+	
+	<script src="/js/bootstrap.bundle.min.js"></script>
+	<script src="/js/jquery-3.7.1.slim.min.js"></script>
+	<script src="/js/imagesloaded.pkgd.min.js"></script>
+	<script src="/js/masonry.pkgd.min.js"></script>
+</head>
+<body>
+<main>
+	<div class="container">	
+	  <header>
+	  <br/>
+		<div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+		  <a href="/" class="d-flex align-items-center link-body-emphasis text-decoration-none">
+			<img src="/i/3rd-i-mini.jpg" width="39px"/>
+			&nbsp;<span class="fs-4">Поэт</span>
+		  </a>
+
+		  <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+			<a class="me-3 py-2 link-body-emphasis text-decoration-none" href="/portfolio">Портфолио</a>&nbsp;
+			<a class="me-3 py-2 link-body-emphasis text-decoration-none" href="/about">Обо мне</a>&nbsp;
+			<a class="me-3 py-2 link-body-emphasis text-decoration-none" href="/contacts">Связь</a>
+		  </nav>
+		</div>
+	  </header>
+
+	<div class="container">	
+		<%= content %>
+	</div>
+	<hr/>
+	<p align="center">
+		Сайт создан Поэтов - сервисом по созданию интернет-проектов. Весь контент унимателен, как и исходный код сайта. Написан и создан Мастером <a href="/about">Иваном Трунаевым</a>.
+	</p>
+</div>
+</main>
+</body>
+</html>

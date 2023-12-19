@@ -1,0 +1,24 @@
+% layout 'pouet';
+<div class="row">
+% for (@$posts) {
+<div class="col-md-6">
+	% my $s = $_->{snippet};
+	% my $url = $_->{name};
+	% $url =~ s/^.*(\/\w+\/[\w\d\-]+\.html)$/$1/;
+	% $s =~ s/(\<h4.*?\>)(.*?)(\<\/h4\>)/$1\<a class="link" href="$url"\>$2\<\/a\>$3/;
+	%== $s;
+</div>
+% }
+</div>
+
+	<script>
+$(function() {
+var $grid = $('.row').masonry({
+	
+});
+// layout Masonry after each image loads
+$grid.imagesLoaded().progress( function() {
+  $grid.masonry('layout');
+});
+});
+	</script>
